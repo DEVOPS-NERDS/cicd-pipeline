@@ -36,3 +36,9 @@ jobs:
           push: false
           load: true
           tags: ${{ github.run_id }}
+
+      - name: Run Structure Test
+        uses: plexsystems/container-structure-test-action@v0.1.0
+        with:
+          image: ${{ github.run_id }}
+          config: .github/unit-tests/ut-adservice.yaml
