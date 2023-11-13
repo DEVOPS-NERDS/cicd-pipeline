@@ -50,4 +50,4 @@ jobs:
           format: table
 
       - name: Print Run ID
-        run: echo "Run ID: ${{ github.run_id }}"
+        run: echo "Run ID ${{ github.run_id }}"
