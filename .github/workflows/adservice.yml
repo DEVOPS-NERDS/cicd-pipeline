@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - "*"
+    paths:
+      - ".github/workflows/adservice.yml"
 
 env:
   IMG-NAME: ravasimages/adservice
